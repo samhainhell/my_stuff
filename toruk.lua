@@ -6,6 +6,7 @@ import(Module_PopScript) -- to kill the inprisioned shaman
 import(Module_Objects) -- to get the shaman object
 import(Module_Map) -- to get shaman's position
 import(Module_Globals) -- gsi()
+import(Module_DataTypes)
 
 
 for i = 0, 7 do

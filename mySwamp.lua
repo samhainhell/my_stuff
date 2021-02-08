@@ -80,7 +80,7 @@ mySwamp.new = function(...)
 						if t.Type == T_PERSON then
 							if t.Model > 1 and t.Model < 8 then 
 								if t.Owner ~= data.sOwner then 
-									if is_thing_on_ground(t) == 1 and is_person_in_any_vehicle(t) == 0 and is_person_in_drum_tower(t) and are_players_allied(data.sOwner, t.Owner) then
+									if (is_thing_on_ground(t) == 1 and is_person_in_any_vehicle(t) == 0 and is_person_in_drum_tower(t) == 0 and are_players_allied(data.sOwner, t.Owner) == 0) then
 										damage_person(t, data.sOwner, data.sDamage, 1)
 									end
 								end
